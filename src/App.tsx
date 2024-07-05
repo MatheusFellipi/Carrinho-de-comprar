@@ -1,9 +1,7 @@
+import { ProviderRoute } from "@/routes";
+
 function App() {
-  return (
-    <>
-      <h1>oi</h1>
-    </>
-  );
+  return <ProviderRoute />;
 }
 
 export default App;
