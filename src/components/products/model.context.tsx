@@ -1,4 +1,6 @@
+import { ControllerProduct } from "@/services/repository/product/controllers";
 import { IDetailsContext } from "@/types/components/details";
+import { ProductType } from "@/types/products";
 import { useMediaQuery } from "@mui/material";
 import {
   createContext,
@@ -9,7 +11,7 @@ import {
   useRef,
   useState,
 } from "react";
-
+import { useParams } from "react-router-dom";
 
 interface ProviderProps {
   children: ReactNode;
@@ -19,30 +21,13 @@ export const DetailsContext = createContext<IDetailsContext>(
   {} as IDetailsContext
 );
 
-const data = {
-  name: "Mouse Gamer",
-  rating: 2,
-  description: "Mouse gamer com alta precisão e botões personalizáveis.",
-  colors: [],
-  logo_img:
-    "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-  img: [
-    "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-    "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-    "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-    "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-    "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-  ],
-  id: 10,
-  price: 299.99,
-};
-
 export function ProductsDetailsProvider({
   children,
 }: Readonly<ProviderProps>): JSX.Element {
   const matches = useMediaQuery("(max-width:767px)");
+  const { id } = useParams();
 
-  const [product, setProduct] = useState(data);
+  const [product, setProduct] = useState<ProductType>();
 
   const [sliderPresentation, setSliderPresentation] = useState(null);
   const [sliderNavigation, setSliderNavigation] = useState(null);
@@ -53,6 +38,11 @@ export function ProductsDetailsProvider({
     setSliderPresentation(sliderPresentationRef.current);
     setSliderNavigation(sliderNavigationRef.current);
   }, []);
+
+  useEffect(() => {
+    if (id === undefined) return 
+    setProduct(ControllerProduct.getByIdFaker(parseInt(id)))
+  }, [id]);
 
   const contextValue = useMemo(
     () => ({

@@ -6,11 +6,13 @@ import { useProductModel } from "@/components/products/model.context";
 
 export const ProductsDetailsComponent = () => {
   const { product } = useProductModel();
+
+
   return (
     <>
       <div className={styles.container}>
         <Typography variant="h4" sx={{ maxWidth: 786 }}>
-          {product.name}
+          {product?.name}
         </Typography>
         <div className={styles.details}>
           <ProductsDetailsImgComponent />

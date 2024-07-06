@@ -11,17 +11,10 @@ import {
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import { useNavigate } from "react-router-dom";
+import { ProductType } from "@/types/products";
 
 interface Prop {
-  data: {
-    name: string;
-    description: string;
-    logo_img: string;
-    imag: string[];
-    rating: number;
-    id: number;
-    price: number;
-  };
+  data: ProductType;
 }
 
 export default function CardProducts({ data }: Prop) {
@@ -51,7 +44,7 @@ export default function CardProducts({ data }: Prop) {
         <Rating size="small" value={data.rating} readOnly />
         <Typography variant="subtitle1">R$ {data.price}</Typography>
         <Typography variant="caption" fontSize={"9px"} component={"span"}>
-          10x de R$ {data.price / 10}
+          10x de R$ {data.divide_price}
         </Typography>
       </CardContent>
       <CardActions

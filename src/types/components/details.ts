@@ -8,6 +8,6 @@ export interface IDetailsContext {
   setSliderNavigation: React.Dispatch<React.SetStateAction<null>>;
   sliderPresentationRef: React.MutableRefObject<null>;
   sliderNavigationRef: React.MutableRefObject<null>;
-  product: ProductType;
+  product: ProductType | undefined;
   matches: boolean;
 }

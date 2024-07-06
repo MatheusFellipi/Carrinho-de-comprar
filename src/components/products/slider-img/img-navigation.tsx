@@ -13,12 +13,12 @@ export const ImgNavigationComponent = () => {
         slidesToShow={5}
         focusOnSelect={true}
       >
-        {product.img.map((item, i) => (
+        {product?.img.map((item, i) => (
           <img
             key={i}
             className={`${styles.img}`}
             src={item}
-            alt={product.name}
+            alt={product?.name}
           />
         ))}
       </Slider>

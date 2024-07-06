@@ -13,12 +13,12 @@ export const ImgPresentationComponent = () => {
         dots
         infinite
       >
-        {product.img.map((item, i) => (
+        {product?.img.map((item, i) => (
           <img
             key={i}
             className={styles.img_presentation}
             src={item}
-            alt={product.name}
+            alt={product?.name}
           />
         ))}
       </Slider>
