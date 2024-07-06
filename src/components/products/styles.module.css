@@ -1,12 +1,99 @@
 .container {
+  display: grid;
+}
+
+.container>h4 {
+  padding-left: 3.5rem;
+  justify-self: center;
+}
+
+.container_details {
+  max-width: 780px
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.container_img {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 
-.container_products {
+.group_img {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  max-width: 1000px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img_presentation {
+  width: 292px;
+  height: 252.41px;
+}
+
+.img {
+  cursor: pointer;
+  width: 59px;
+  height: 50px;
+}
+
+.elipses {
+  cursor: pointer;
+  background-color: red;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50rem;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.related {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
+.related_products {
+  display: flex;
+  margin-top: 2rem;
+  gap: 5px;
+}
+
+.group_rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 767px) {
+
+  .group_img,
+  .container>h4 {
+    display: none;
+  }
+
+  .details {
+    flex-direction: column;
+    justify-content: center;
+
+  }
 }
