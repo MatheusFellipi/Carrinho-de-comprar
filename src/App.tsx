@@ -1,7 +1,12 @@
 import { ProviderRoute } from "@/routes";
+import { CartProvider } from "@/shared/hook/cart";
 
 function App() {
-  return <ProviderRoute />;
+  return (
+    <CartProvider>
+      <ProviderRoute />
+    </CartProvider>
+  );
 }
 
 export default App;
