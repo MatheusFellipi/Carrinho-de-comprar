@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.group_btn {
+  display: flex;
+  gap: 10px;
+}
+
+.title {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .btn_home {
+    display: none !important;
+  }
+}
