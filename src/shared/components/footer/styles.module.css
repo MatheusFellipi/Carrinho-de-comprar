@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1rem;
+}
+
+.title {
+  font-size: 10rem;
+  color: #fff;
+}
+
+.reserved_terms {
+  display: flex;
+  gap: 2rem;
+}
+
+.reserved {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .rede {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.rede {
+  display: flex;
+  margin-bottom: 5rem;
+  justify-content: space-between;
+}
+
+.rede_btn {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.news_letter{
+  
+}
