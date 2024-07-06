@@ -11,14 +11,16 @@ interface Props extends ButtonProps {
   heigh?: string;
   width?: string;
   custoColor?: string;
+  borderColor?: string;
+  textColor?: string;
 }
 
 const ColorButton = styled(Button)<Props>(
-  ({ theme, heigh, width, custoColor, color }) => ({
-    color: theme.palette.getContrastText(purple[500]),
+  ({ theme, heigh, custoColor, color, borderColor, textColor }) => ({
+    color: textColor || theme.palette.getContrastText(purple[500]),
     backgroundColor: custoColor || color,
+    borderColor: borderColor,
     height: heigh,
-    width: width,
     "&:hover": {
       backgroundColor: custoColor || color,
       filter: "brightness(1)",
@@ -28,7 +30,7 @@ const ColorButton = styled(Button)<Props>(
 
 export const BtnComponent = ({ children, ...props }: Props) => {
   return (
-    <ColorButton className={stylesCss.btn} {...props}>
+    <ColorButton fullWidth className={stylesCss.btn} {...props}>
       {children}
     </ColorButton>
   );
