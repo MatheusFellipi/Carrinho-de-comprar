@@ -12,7 +12,12 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 
 export default function CardProducts() {
   return (
-    <Card sx={{ width: 185, justifyContent: "center" }}>
+    <Card
+      sx={{ width: 185, justifyContent: "center", cursor: "pointer" }}
+      onClick={() => {
+        console.log("sdasd");
+      }}
+    >
       <CardMedia
         sx={{ height: 200, objectFit: "cover" }}
         image="./src/assets/Cadeira.png"

@@ -4,11 +4,11 @@ import PrimarySearchAppBar from "@/shared/components/header";
 
 export const LayoutPages = () => {
   return (
-    <main>
+    <div>
       <PrimarySearchAppBar />
-      <section className={styled.container}>
+      <main className={styled.container}>
         <Outlet />
-      </section>
-    </main>
+      </main>
+    </div>
   );
 };
