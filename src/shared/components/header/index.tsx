@@ -1,10 +1,39 @@
-import { HeaderComponent } from "@/shared/components/header/header";
-import { RegisterProvider } from "@/shared/components/header/model";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import ShoppingCartTwoToneIcon from "@mui/icons-material/ShoppingCartTwoTone";
 
-export const HeaderLayout = () => {
+
+export default function ButtonAppBar() {
   return (
-    <RegisterProvider>
-      <HeaderComponent />
-    </RegisterProvider>
+    <Box sx={{ flexGrow: 1 }} component={"header"}>
+      <AppBar position="static" >
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2, ml: 1 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Loja
+          </Typography>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="shopping"
+          >
+            <ShoppingCartTwoToneIcon />
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
-};
+}
