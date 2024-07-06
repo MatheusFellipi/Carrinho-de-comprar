@@ -1,4 +1,4 @@
-import { ProductsDetailsComponent } from "@/components/products/view";
+import { ProductsDetailsPage } from "@/pages/details-product";
 import { ErrorPage } from "@/pages/error-page";
 import { HomePage } from "@/pages/home";
 import { LayoutPages } from "@/shared/components/layout";
@@ -16,7 +16,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/:id",
-        element: <ProductsDetailsComponent />,
+        element: <ProductsDetailsPage />,
       },
     ],
   },
