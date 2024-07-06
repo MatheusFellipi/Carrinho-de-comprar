@@ -5,10 +5,10 @@ import { BtnComponent } from "@/shared/components/btn";
 export const ProductsDetailsInfoComponent = () => {
   return (
     <section className={styles.container_details}>
-      <Typography variant="h6" sx={{ maxWidth: 780 }}>
+      <Typography variant="h6">
         Cadeira vitalis Charles
       </Typography>
-      <Typography variant="caption" fontSize={8}>
+      <Typography variant="caption" fontSize={12}>
         Sharps moveis
       </Typography>
       <Rating

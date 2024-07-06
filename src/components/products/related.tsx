@@ -11,9 +11,6 @@ export const ProductsDetailsRelatedComponent = () => {
 
       <div className={styles.related_products}>
         <CardProducts />
-        <CardProducts />
-        <CardProducts />
-        <CardProducts />
       </div>
     </section>
   );

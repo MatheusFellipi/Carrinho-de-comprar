@@ -4,39 +4,21 @@
 }
 
 .container>h4 {
-  padding-left: 3.5rem;
   margin-bottom: 1rem;
   justify-self: center;
 }
 
 .container_details {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  margin-top: 4rem;
 }
 
-.container_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
 
-.group_img {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.img_presentation {
-  width: 292px;
-  height: 252.41px;
-}
-
-.img {
-  cursor: pointer;
-  width: 59px;
-  height: 50px;
+.hide {
+  display: none !important;
 }
 
 .elipses {
@@ -74,17 +56,13 @@
   flex-direction: column;
 }
 
-.container_img {
+.details {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
 
-.details {
-  display: flex;
-  justify-content: space-evenly;
-}
 
 @media (max-width: 767px) {
 
@@ -95,7 +73,5 @@
 
   .details {
     flex-direction: column;
-    justify-content: center;
-
   }
 }

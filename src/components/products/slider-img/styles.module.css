@@ -1,0 +1,38 @@
+.container_img {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  gap: 40px;
+}
+
+.group_img {
+  width: 59px;
+  gap: 10px;
+  height: 100%;
+}
+
+.img_presentation {
+  width: 18.5rem;
+  height: 21rem;
+  object-fit: scale-down;
+}
+
+.img {
+  cursor: pointer;
+  width: 3.688rem;
+  height: 3.125rem;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .group_img {
+    display: none;
+  }
+  .container_img {
+    gap: 0px
+  }
+
+}
