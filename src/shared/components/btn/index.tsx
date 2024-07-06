@@ -1,10 +1,6 @@
 import { ReactNode } from "react";
-import stylesCss from "./styles.module.css";
-
 import Button, { ButtonProps } from "@mui/material/Button";
-
 import { styled } from "@mui/material/styles";
-import { purple } from "@mui/material/colors";
 
 interface Props extends ButtonProps {
   children: ReactNode;
@@ -17,7 +13,7 @@ interface Props extends ButtonProps {
 
 const ColorButton = styled(Button)<Props>(
   ({ theme, heigh, custoColor, color, borderColor, textColor }) => ({
-    color: textColor || theme.palette.getContrastText(purple[500]),
+    color: textColor || theme.palette.getContrastText("#000"),
     backgroundColor: custoColor || color,
     borderColor: borderColor,
     height: heigh,
@@ -30,7 +26,7 @@ const ColorButton = styled(Button)<Props>(
 
 export const BtnComponent = ({ children, ...props }: Props) => {
   return (
-    <ColorButton fullWidth className={stylesCss.btn} {...props}>
+    <ColorButton fullWidth {...props}>
       {children}
     </ColorButton>
   );

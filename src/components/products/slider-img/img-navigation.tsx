@@ -1,27 +1,24 @@
 import Slider from "react-slick";
 import styles from "./styles.module.css";
-import { useDetailsModel } from "@/components/products/model.context";
-
-const img = [1, 2, 3, 4, 5, 6, 7, 8];
+import { useProductModel } from "@/components/products/model.context";
 
 export const ImgNavigationComponent = () => {
-  const { matches, nav1, sliderRef2 } = useDetailsModel();
-
+  const { matches, sliderPresentation, sliderNavigationRef, product } = useProductModel();
   return (
     <div className={`${styles.group_img} ${matches ? styles.hide : ""} `}>
       <Slider
         vertical
-        asNavFor={nav1}
-        ref={sliderRef2}
+        asNavFor={sliderPresentation as Slider}
+        ref={sliderNavigationRef}
         slidesToShow={5}
         focusOnSelect={true}
       >
-        {img.map((item, i) => (
+        {product.img.map((item, i) => (
           <img
             key={i}
             className={`${styles.img}`}
-            src="src/assets/image.png"
-            alt=""
+            src={item}
+            alt={product.name}
           />
         ))}
       </Slider>

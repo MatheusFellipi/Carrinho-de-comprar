@@ -5,9 +5,12 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ShoppingCartTwoToneIcon from "@mui/icons-material/ShoppingCartTwoTone";
+import { useNavigate } from "react-router-dom";
 
 
 export default function ButtonAppBar() {
+  const navigate = useNavigate();
+
   return (
     <Box sx={{ flexGrow: 1 }} component={"header"}>
       <AppBar position="static" >
@@ -29,6 +32,9 @@ export default function ButtonAppBar() {
             edge="start"
             color="inherit"
             aria-label="shopping"
+            onClick={()=>{
+              navigate("cart/")
+            }}
           >
             <ShoppingCartTwoToneIcon />
           </IconButton>

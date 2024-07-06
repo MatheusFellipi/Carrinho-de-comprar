@@ -1,13 +1,13 @@
 import styles from "./styles.module.css";
 import { Rating, Typography } from "@mui/material";
 import { BtnComponent } from "@/shared/components/btn";
+import { useProductModel } from "@/components/products/model.context";
 
 export const ProductsDetailsInfoComponent = () => {
+  const { product } = useProductModel();
   return (
     <section className={styles.container_details}>
-      <Typography variant="h6">
-        Cadeira vitalis Charles
-      </Typography>
+      <Typography variant="h6">{product.name}</Typography>
       <Typography variant="caption" fontSize={12}>
         Sharps moveis
       </Typography>
@@ -18,12 +18,15 @@ export const ProductsDetailsInfoComponent = () => {
         value={2}
         readOnly
       />
-      <div className={styles.elipses}/>
+      <div className={styles.elipses} />
       <div className={styles.prices}>
-        <Typography variant="h6">R$ 450</Typography>
+        <Typography variant="h6">
+          R$
+          {product.price}
+        </Typography>
         <Typography variant="inherit">à vista</Typography>
       </div>
-      <Typography variant="inherit">10x de R$ 250</Typography>
+      <Typography variant="inherit">10x de R$ {product.price / 10}</Typography>
       <Typography variant="inherit">sem juros</Typography>
       <BtnComponent width="18.125rem" sx={{ mt: 5 }} custoColor="#158A8A">
         Comprar

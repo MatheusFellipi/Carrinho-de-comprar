@@ -1,3 +1,4 @@
+import { CartPage } from "@/pages/cart";
 import { ProductsDetailsPage } from "@/pages/details-product";
 import { ErrorPage } from "@/pages/error-page";
 import { HomePage } from "@/pages/home";
@@ -17,6 +18,10 @@ export const routes = createBrowserRouter([
       {
         path: "/:id",
         element: <ProductsDetailsPage />,
+      },
+      {
+        path: "cart/",
+        element: <CartPage />,
       },
     ],
   },
