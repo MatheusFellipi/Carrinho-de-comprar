@@ -1,25 +1,21 @@
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Avatar from "@mui/material/Avatar";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ListItemButton from "@mui/material/ListItemButton";
 import styles from "./styles.module.css";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
-import { useCart } from "@/shared/hook/cart";
-import {
-  Box,
-  IconButton,
-  ListItemText,
-  Typography,
-  useMediaQuery,
-} from "@mui/material";
+import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
+import { useCart } from "@/shared/hook/cart";
 
 export default function ListProductsComponent() {
   const matches = useMediaQuery("(max-width:767px)");
   const { cart, handleRemover, handleQtdAdd, handleQtdRemove } = useCart();
-
   return (
     <List sx={{ width: "100%", bgcolor: "background.paper" }}>
       {cart?.map((item) => (
@@ -37,9 +33,9 @@ export default function ListProductsComponent() {
           key={item.id}
         >
           <ListItemAvatar>
-            <Avatar>
+            <div className={styles.img}>
               <img className={styles.img} src={item.logo_img} alt={item.name} />
-            </Avatar>
+            </div>
           </ListItemAvatar>
           <ListItemText
             sx={{
@@ -71,7 +67,6 @@ export default function ListProductsComponent() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-        
             }}
           >
             <ListItemButton

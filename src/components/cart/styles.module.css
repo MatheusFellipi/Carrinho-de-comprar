@@ -7,7 +7,12 @@
   width: 15rem;
   height: 10rem;
 }
-
+.img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
 
 @media (max-width:1024px) {
   .total_prices {

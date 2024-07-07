@@ -17,6 +17,7 @@ export const HomeComponent = () => {
       <section className={styles.content}>
         {data?.map((item) => (
           <CardProducts
+          key={item.id}
             data={item}
             handleAddProduct={handleAddProduct}
             navigate={navigate}

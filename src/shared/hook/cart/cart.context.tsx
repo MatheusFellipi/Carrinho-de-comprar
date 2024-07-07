@@ -1,6 +1,7 @@
 import { ICartContext } from "@/shared/hook/cart/model";
 import { itemCartProductType } from "@/types/products";
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 export function CartModelView(): ICartContext {
   const [total, setTotal] = useState(0);
@@ -28,11 +29,12 @@ export function CartModelView(): ICartContext {
       item.qtd = 1;
       item.total_price = item.price;
       copy.push(item);
-    }
+  }
     setCart(copy);
     calculateTotal(copy);
     qtdProductTotal(copy)
     addItemLocal(copy);
+    toast("Produto adicionado")
   };
 
   const handleQtdRemove = (id: number): void => {
@@ -68,6 +70,7 @@ export function CartModelView(): ICartContext {
     setCart(copy);
     qtdProductTotal(copy)
     calculateTotal(copy);
+    toast("Produto removido")
   };
 
   const calculateTotal = (data: itemCartProductType[]) => {
