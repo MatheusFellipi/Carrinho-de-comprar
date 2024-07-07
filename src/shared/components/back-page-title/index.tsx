@@ -6,7 +6,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { useNavigate } from "react-router-dom";
 
 interface Props {
-  name: string;
+  name?: string;
 }
 
 export const BackPageTitleComponent = ({ name }: Props) => {

@@ -4,12 +4,12 @@
         "name": "Casaco de Lã",
         "rating": 4.8,
         "description": "Um casaco de lã grosso e aconchegante, perfeito para o estilo dark academia.",
-        "logo_img": "/public/img/1_thumbnail_900x.png",
+        "logo_img": "/img/1_thumbnail_900x.png",
         "img": [
-            "/public/img/1_thumbnail_900x.png",
-            "/public/img/2_thumbnail_900x.png",
-            "/public/img/3_thumbnail_900x.png",
-            "/public/img/4_thumbnail_900x.png"
+            "/img/1_thumbnail_900x.png",
+            "/img/2_thumbnail_900x.png",
+            "/img/3_thumbnail_900x.png",
+            "/img/4_thumbnail_900x.png"
         ],
         "price": 350.00,
         "divide_price": 35.00,
@@ -21,12 +21,12 @@
         "name": "Calça Xadrez",
         "rating": 4.6,
         "description": "Calça xadrez em tons escuros, ideal para compor um look acadêmico.",
-        "logo_img": "/public/img/1_thumbnail_900x.png",
+        "logo_img": "/img/1_thumbnail_900x.png",
         "img": [
-            "/public/img/1_thumbnail_900x.png",
-            "/public/img/2_thumbnail_900x.png",
-            "/public/img/3_thumbnail_900x.png",
-            "/public/img/4_thumbnail_900x.png"
+            "/img/1_thumbnail_900x.png",
+            "/img/2_thumbnail_900x.png",
+            "/img/3_thumbnail_900x.png",
+            "/img/4_thumbnail_900x.png"
         ],
         "price": 180.00,
         "divide_price": 18.00,
@@ -38,12 +38,12 @@
         "name": "Camisa Social Branca",
         "rating": 4.7,
         "description": "Camisa social branca de algodão, essencial para um visual dark academia clássico.",
-        "logo_img": "/public/img/1_thumbnail_900x.png",
+        "logo_img": "/img/1_thumbnail_900x.png",
         "img": [
-            "/public/img/1_thumbnail_900x.png",
-            "/public/img/2_thumbnail_900x.png",
-            "/public/img/3_thumbnail_900x.png",
-            "/public/img/4_thumbnail_900x.png"
+            "/img/1_thumbnail_900x.png",
+            "/img/2_thumbnail_900x.png",
+            "/img/3_thumbnail_900x.png",
+            "/img/4_thumbnail_900x.png"
         ],
         "price": 120.00,
         "divide_price": 12.00,
@@ -55,12 +55,12 @@
         "name": "Vestido Midi",
         "rating": 4.9,
         "description": "Vestido midi em cores sóbrias com detalhes vintage, ideal para o estilo dark academia.",
-        "logo_img": "/public/img/1_thumbnail_900x.png",
+        "logo_img": "/img/1_thumbnail_900x.png",
         "img": [
-            "/public/img/1_thumbnail_900x.png",
-            "/public/img/2_thumbnail_900x.png",
-            "/public/img/3_thumbnail_900x.png",
-            "/public/img/4_thumbnail_900x.png"
+            "/img/1_thumbnail_900x.png",
+            "/img/2_thumbnail_900x.png",
+            "/img/3_thumbnail_900x.png",
+            "/img/4_thumbnail_900x.png"
         ],
         "price": 250.00,
         "divide_price": 25.00,
@@ -72,12 +72,12 @@
         "name": "Blazer Marrom",
         "rating": 4.5,
         "description": "Blazer marrom de corte clássico, perfeito para completar seu look dark academia.",
-        "logo_img": "/public/img/1_thumbnail_900x.png",
+        "logo_img": "/img/1_thumbnail_900x.png",
         "img": [
-            "/public/img/1_thumbnail_900x.png",
-            "/public/img/2_thumbnail_900x.png",
-            "/public/img/3_thumbnail_900x.png",
-            "/public/img/4_thumbnail_900x.png"
+            "/img/1_thumbnail_900x.png",
+            "/img/2_thumbnail_900x.png",
+            "/img/3_thumbnail_900x.png",
+            "/img/4_thumbnail_900x.png"
         ],
         "price": 300.00,
         "divide_price": 30.00,
@@ -89,12 +89,12 @@
         "name": "Saia Plissada",
         "rating": 4.6,
         "description": "Saia plissada em cor escura, elegante e sofisticada para o estilo dark academia.",
-        "logo_img": "/public/img/1_thumbnail_900x.png",
+        "logo_img": "/img/1_thumbnail_900x.png",
         "img": [
-            "/public/img/1_thumbnail_900x.png",
-            "/public/img/2_thumbnail_900x.png",
-            "/public/img/3_thumbnail_900x.png",
-            "/public/img/4_thumbnail_900x.png"
+            "/img/1_thumbnail_900x.png",
+            "/img/2_thumbnail_900x.png",
+            "/img/3_thumbnail_900x.png",
+            "/img/4_thumbnail_900x.png"
         ],
         "price": 150.00,
         "divide_price": 15.00,
@@ -106,12 +106,12 @@
         "name": "Cardigan de Tricô",
         "rating": 4.8,
         "description": "Cardigan de tricô macio e confortável, ideal para dias mais frios.",
-        "logo_img": "/public/img/1_thumbnail_900x.png",
+        "logo_img": "/img/1_thumbnail_900x.png",
         "img": [
-            "/public/img/1_thumbnail_900x.png",
-            "/public/img/2_thumbnail_900x.png",
-            "/public/img/3_thumbnail_900x.png",
-            "/public/img/4_thumbnail_900x.png"
+            "/img/1_thumbnail_900x.png",
+            "/img/2_thumbnail_900x.png",
+            "/img/3_thumbnail_900x.png",
+            "/img/4_thumbnail_900x.png"
         ],
         "price": 200.00,
         "divide_price": 20.00,
@@ -123,12 +123,12 @@
         "name": "Suéter de Lã",
         "rating": 4.9,
         "description": "Suéter de lã com gola alta, perfeito para manter-se aquecido com estilo.",
-        "logo_img": "/public/img/1_thumbnail_900x.png",
+        "logo_img": "/img/1_thumbnail_900x.png",
         "img": [
-            "/public/img/1_thumbnail_900x.png",
-            "/public/img/2_thumbnail_900x.png",
-            "/public/img/3_thumbnail_900x.png",
-            "/public/img/4_thumbnail_900x.png"
+            "/img/1_thumbnail_900x.png",
+            "/img/2_thumbnail_900x.png",
+            "/img/3_thumbnail_900x.png",
+            "/img/4_thumbnail_900x.png"
         ],
         "price": 220.00,
         "divide_price": 22.00,
@@ -140,12 +140,12 @@
         "name": "Gravata Borboleta",
         "rating": 4.3,
         "description": "Gravata borboleta clássica, um acessório indispensável para o estilo dark academia.",
-        "logo_img": "/public/img/1_thumbnail_900x.png",
+        "logo_img": "/img/1_thumbnail_900x.png",
         "img": [
-            "/public/img/1_thumbnail_900x.png",
-            "/public/img/2_thumbnail_900x.png",
-            "/public/img/3_thumbnail_900x.png",
-            "/public/img/4_thumbnail_900x.png"
+            "/img/1_thumbnail_900x.png",
+            "/img/2_thumbnail_900x.png",
+            "/img/3_thumbnail_900x.png",
+            "/img/4_thumbnail_900x.png"
         ],
         "price": 80.00,
         "divide_price": 8.00,
@@ -157,12 +157,12 @@
         "name": "Boina de Lã",
         "rating": 4.7,
         "description": "Boina de lã em cor preta, adiciona um toque final sofisticado ao look.",
-        "logo_img": "/public/img/1_thumbnail_900x.png",
+        "logo_img": "/img/1_thumbnail_900x.png",
         "img": [
-            "/public/img/1_thumbnail_900x.png",
-            "/public/img/2_thumbnail_900x.png",
-            "/public/img/3_thumbnail_900x.png",
-            "/public/img/4_thumbnail_900x.png"
+            "/img/1_thumbnail_900x.png",
+            "/img/2_thumbnail_900x.png",
+            "/img/3_thumbnail_900x.png",
+            "/img/4_thumbnail_900x.png"
         ],
         "price": 100.00,
         "divide_price": 10.00,

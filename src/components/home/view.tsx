@@ -10,7 +10,7 @@ export const HomeComponent = () => {
       <section>
         <img
           className={styles.img_hero}
-          src="public/img/banner.png"
+          src="/img/banner.png"
           alt="banner nova coleção"
         />
       </section>

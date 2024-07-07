@@ -4,8 +4,6 @@ import App from "./App.tsx";
 import { ToastContainer } from "react-toastify";
 
 import "@/shared/styles/global.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "react-toastify/dist/ReactToastify.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
