@@ -4,7 +4,7 @@ import Rating from "@mui/material/Rating";
 import PixIcon from "@mui/icons-material/Pix";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { ProductsDetailsColorsComponent } from "@/components/products/colors";
+import { ProductsDetailsColorsComponent } from "@/components/products/infos/colors";
 import { BtnComponent } from "@/shared/components/btn";
 import { useProductModel } from "@/components/products/model.context";
 import { useCart } from "@/shared/hook/cart";
@@ -14,7 +14,6 @@ import { itemCartProductType } from "@/types/products";
 export const ProductsDetailsInfoComponent = () => {
   const { product } = useProductModel();
   const { handleAddProduct } = useCart();
-
   return (
     <section className={styles.container_details}>
       <div>
@@ -24,7 +23,6 @@ export const ProductsDetailsInfoComponent = () => {
         <Typography variant="caption" fontWeight={500} fontSize={16}>
           {product?.brand}
         </Typography>
-        <br />
         <div className={styles.group_rating}>
           <Rating size="small" name="read-only" value={2} readOnly />
           <FavoriteBorderIcon />
@@ -33,7 +31,6 @@ export const ProductsDetailsInfoComponent = () => {
 
       <div>
         <ProductsDetailsColorsComponent />
-
         <div className={styles.prices}>
           <Typography variant="h6">
             {product?.price.toLocaleString("pt-br", {
@@ -55,7 +52,7 @@ export const ProductsDetailsInfoComponent = () => {
 
       <div>
         <Typography variant="inherit">{product?.description}</Typography>
-      </div>
+        </div>
 
       <div>
         <PixIcon />

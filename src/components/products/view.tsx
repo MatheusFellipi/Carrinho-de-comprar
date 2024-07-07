@@ -1,7 +1,7 @@
 import { ProductsDetailsImgComponent } from "@/components/products/slider-img";
 import styles from "./styles.module.css";
 import { IconButton, Typography } from "@mui/material";
-import { ProductsDetailsInfoComponent } from "@/components/products/infos";
+import { ProductsDetailsInfoComponent } from "@/components/products/infos/infos";
 import { useProductModel } from "@/components/products/model.context";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { ProductsDescriptionComponent } from "@/components/products/description";
