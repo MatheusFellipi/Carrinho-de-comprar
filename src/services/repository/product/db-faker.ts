@@ -1,11 +1,11 @@
-import dbFake from "../../../db.json";
+import dbFake from "../../../../db.json";
 
 export const getData = () => {
-  return dbFake.products;
+  return dbFake;
 };
 
 export const getDataByID = (id: number) => {
-  const copy = [...dbFake.products];
+  const copy = [...dbFake];
   const p = copy.find((x) => x.id == id);
   return p;
 };

@@ -7,13 +7,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ShoppingCartTwoToneIcon from "@mui/icons-material/ShoppingCartTwoTone";
 import { useNavigate } from "react-router-dom";
 
-
 export default function ButtonAppBar() {
   const navigate = useNavigate();
 
   return (
     <Box sx={{ flexGrow: 1 }} component={"header"}>
-      <AppBar position="static" >
+      <AppBar position="static" sx={{ bgcolor: "#158A8A" }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -32,8 +31,8 @@ export default function ButtonAppBar() {
             edge="start"
             color="inherit"
             aria-label="shopping"
-            onClick={()=>{
-              navigate("cart/")
+            onClick={() => {
+              navigate("cart/");
             }}
           >
             <ShoppingCartTwoToneIcon />
