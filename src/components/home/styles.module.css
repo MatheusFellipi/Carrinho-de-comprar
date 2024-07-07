@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 
-
-
+.img_hero {
+  width: 100%;
+}
 
 .container_products {
   display: flex;
@@ -14,14 +16,13 @@
   max-width: 1000px;
 }
 
-
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.content div + div {
+.content div+div {
   display: flex;
   flex-direction: column;
 }
@@ -33,7 +34,7 @@
     justify-content: start;
   }
 
-  .content div+div{
+  .content div+div {
     flex-direction: row;
     align-items: start;
     margin-top: 1rem;

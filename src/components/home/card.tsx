@@ -10,23 +10,30 @@ import {
 } from "@mui/material";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import { useNavigate } from "react-router-dom";
-import { ProductType } from "@/types/products";
+import { itemCartProductType, ProductType } from "@/types/products";
+import { NavigateFunction } from "react-router-dom";
 
 interface Prop {
   data: ProductType;
+  navigate: NavigateFunction;
+  handleAddProduct: (product: itemCartProductType) => void;
 }
 
-export default function CardProducts({ data }: Prop) {
+export default function CardProducts({
+  data,
+  navigate,
+  handleAddProduct,
+}: Prop) {
   const matches = useMediaQuery("(max-width:600px)");
-  const navigate = useNavigate();
-
   return (
     <Card
       sx={{
         minHeight: 340,
-        ...(matches && {
           display: "flex",
+          justifyContent: "space-between",
+          flexDirection:"column",
+        ...(matches && {
+          flexDirection:"row",
           alignItems: "center",
           width: "100%",
         }),
@@ -42,9 +49,15 @@ export default function CardProducts({ data }: Prop) {
           {data.name}
         </Typography>
         <Rating size="small" value={data.rating} readOnly />
-        <Typography variant="subtitle1">R$ {data.price}</Typography>
+        <Typography variant="subtitle1">R$ {data.price.toLocaleString("pt-br", {
+                style: "currency",
+                currency: "BRL",
+              })}</Typography>
         <Typography variant="caption" fontSize={"9px"} component={"span"}>
-          10x de R$ {data.divide_price}
+          10x de R$ {data.divide_price.toLocaleString("pt-br", {
+                style: "currency",
+                currency: "BRL",
+              })}
         </Typography>
       </CardContent>
       <CardActions
@@ -63,8 +76,8 @@ export default function CardProducts({ data }: Prop) {
           <InfoOutlinedIcon />
         </Button>
         <Button
-          sx={{
-            marginLeft: 0,
+          onClick={() => {
+            handleAddProduct(data as itemCartProductType);
           }}
         >
           <AddShoppingCartIcon />

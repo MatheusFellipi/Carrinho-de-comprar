@@ -16,17 +16,8 @@
   margin-top: 4rem;
 }
 
-
 .hide {
   display: none !important;
-}
-
-.elipses {
-  cursor: pointer;
-  background-color: red;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50rem;
 }
 
 .prices {

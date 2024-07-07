@@ -6,8 +6,6 @@ import { useProductModel } from "@/components/products/model.context";
 
 export const ProductsDetailsComponent = () => {
   const { product } = useProductModel();
-
-
   return (
     <>
       <div className={styles.container}>
