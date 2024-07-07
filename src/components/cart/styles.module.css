@@ -1,5 +1,20 @@
-.total_prices {
+.container_prices {
   display: flex;
-  gap:10px;
-  justify-content: flex-end;
+}
+
+.total_prices {
+  border-radius: 5rem;
+  width: 15rem;
+  height: 10rem;
+}
+
+
+@media (max-width:1024px) {
+  .total_prices {
+    width: 100%;
+  }
+
+  .container_prices {
+    flex-direction: column;
+  }
 }

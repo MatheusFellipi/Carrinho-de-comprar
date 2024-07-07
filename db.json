@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Casaco de Lã Feminino",
+        "name": "Casaco de Lã",
         "rating": 4.8,
         "description": "Um casaco de lã grosso e aconchegante, perfeito para o estilo dark academia.",
         "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
@@ -52,7 +52,7 @@
     },
     {
         "id": 4,
-        "name": "Vestido Midi Feminino",
+        "name": "Vestido Midi",
         "rating": 4.9,
         "description": "Vestido midi em cores sóbrias com detalhes vintage, ideal para o estilo dark academia.",
         "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
@@ -69,7 +69,7 @@
     },
     {
         "id": 5,
-        "name": "Blazer Marrom Feminino",
+        "name": "Blazer Marrom",
         "rating": 4.5,
         "description": "Blazer marrom de corte clássico, perfeito para completar seu look dark academia.",
         "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
@@ -103,7 +103,7 @@
     },
     {
         "id": 7,
-        "name": "Cardigan de Tricô Feminino",
+        "name": "Cardigan de Tricô",
         "rating": 4.8,
         "description": "Cardigan de tricô macio e confortável, ideal para dias mais frios.",
         "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
@@ -120,7 +120,7 @@
     },
     {
         "id": 8,
-        "name": "Suéter de Lã Feminino",
+        "name": "Suéter de Lã",
         "rating": 4.9,
         "description": "Suéter de lã com gola alta, perfeito para manter-se aquecido com estilo.",
         "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",

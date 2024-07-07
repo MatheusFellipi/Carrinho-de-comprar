@@ -9,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 
 export default function ButtonAppBar() {
   const navigate = useNavigate();
-
   return (
     <Box sx={{ flexGrow: 1 }} component={"header"}>
       <AppBar position="static" sx={{ bgcolor: "#158A8A" }}>
@@ -23,9 +22,11 @@ export default function ButtonAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Loja
-          </Typography>
+
+            <Typography variant="h6" component="h6" onClick={() => navigate("/")} sx={{ flexGrow: 1 , cursor: "pointer"}}>
+              Academy.styles
+            </Typography>
+
           <IconButton
             size="large"
             edge="start"

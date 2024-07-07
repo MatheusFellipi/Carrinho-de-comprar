@@ -16,6 +16,7 @@ export function CartProvider({
     cart,
     handleRemover,
     total,
+    qdtProduct,
     handleQtdRemove,
     handleQtdAdd,
   } = CartModelView();
@@ -27,6 +28,7 @@ export function CartProvider({
       handleRemover,
       total,
       handleQtdRemove,
+      qdtProduct,
       handleQtdAdd,
     }),
     [
@@ -34,6 +36,7 @@ export function CartProvider({
       handleAddProduct,
       handleRemover,
       total,
+      qdtProduct,
       handleQtdRemove,
       handleQtdAdd,
     ]

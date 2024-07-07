@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export function CartModelView(): ICartContext {
   const [total, setTotal] = useState(0);
+  const [qdtProduct, setQdtProduct] = useState(0);
 
   const [cart, setCart] = useState<itemCartProductType[]>(() => {
     if (typeof window === "undefined") return [];
@@ -14,6 +15,7 @@ export function CartModelView(): ICartContext {
 
   useEffect(() => {
     calculateTotal(cart);
+    qtdProductTotal(cart)
   }, []);
 
   const handleAddProduct = (item: itemCartProductType): void => {
@@ -29,6 +31,7 @@ export function CartModelView(): ICartContext {
     }
     setCart(copy);
     calculateTotal(copy);
+    qtdProductTotal(copy)
     addItemLocal(copy);
   };
 
@@ -41,6 +44,7 @@ export function CartModelView(): ICartContext {
     if (copy[index].qtd === 0) copy.splice(index, 1);
     setCart(copy);
     calculateTotal(copy);
+    qtdProductTotal(copy)
     addItemLocal(copy);
   };
 
@@ -52,6 +56,7 @@ export function CartModelView(): ICartContext {
     copy[index].qtd++;
     setCart(copy);
     calculateTotal(copy);
+    qtdProductTotal(copy)
     addItemLocal(copy);
   };
 
@@ -61,6 +66,7 @@ export function CartModelView(): ICartContext {
     if (index !== -1) copy.splice(index, 1);
     addItemLocal(copy);
     setCart(copy);
+    qtdProductTotal(copy)
     calculateTotal(copy);
   };
 
@@ -69,6 +75,13 @@ export function CartModelView(): ICartContext {
       return acc + item.total_price;
     }, 0);
     setTotal(total);
+  };
+
+  const qtdProductTotal = (data: itemCartProductType[]) => {
+    const total = data.reduce((acc: number, item: itemCartProductType) => {
+      return acc + item.qtd;
+    }, 0);
+    setQdtProduct(total);
   };
 
   const addItemLocal = (items: itemCartProductType[]) => {
@@ -80,6 +93,7 @@ export function CartModelView(): ICartContext {
   return {
     cart,
     handleAddProduct,
+    qdtProduct,
     total,
     handleRemover,
     handleQtdRemove,

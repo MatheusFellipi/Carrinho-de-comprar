@@ -7,23 +7,21 @@ export const HomeComponent = () => {
 
   return (
     <>
-      <img
-        className={styles.img_hero}
-        src="../../../../public/img/banner.png"
-        alt="banner nova coleção"
-      />
-      <section className={styles.container}>
-        <div className={styles.container_products}>
-          {data?.map((item) => (
-            <div key={item.id}>
-              <CardProducts
-                data={item}
-                handleAddProduct={handleAddProduct}
-                navigate={navigate}
-              />
-            </div>
-          ))}
-        </div>
+      <section>
+        <img
+          className={styles.img_hero}
+          src="public/img/banner.png"
+          alt="banner nova coleção"
+        />
+      </section>
+      <section className={styles.content}>
+        {data?.map((item) => (
+          <CardProducts
+            data={item}
+            handleAddProduct={handleAddProduct}
+            navigate={navigate}
+          />
+        ))}
       </section>
     </>
   );

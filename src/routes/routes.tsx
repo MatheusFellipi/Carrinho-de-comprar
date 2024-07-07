@@ -2,7 +2,7 @@ import { CartPage } from "@/pages/cart";
 import { ProductsDetailsPage } from "@/pages/details-product";
 import { ErrorPage } from "@/pages/error-page";
 import { HomePage } from "@/pages/home";
-import { LayoutPages } from "@/shared/components/layout";
+import { LayoutPages } from "@/shared/layout";
 import { createBrowserRouter } from "react-router-dom";
 
 export const routes = createBrowserRouter([

@@ -1,25 +1,20 @@
 import ListProductsComponent from "@/components/cart/list";
+import { CartTotalComponent } from "@/components/cart/total";
+import { BackPageTitleComponent } from "@/shared/components/back-page-title";
 import styles from "./styles.module.css";
-import { useCart } from "@/shared/hook/cart";
-import { Divider, Typography } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export const CartComponent = () => {
-  const { total } = useCart();
+  const matches = useMediaQuery("(max-width:1024px)");
+
   return (
     <div>
-      <ListProductsComponent />
-      <Divider sx={{ mb: 5 }} />
-      <section className={styles.total_prices}>
-        <Typography variant="h4" fontWeight={500}>
-          Total:
-        </Typography>
-        <Typography variant="h4" fontWeight={700}>
-          {total.toLocaleString("pt-br", {
-            style: "currency",
-            currency: "BRL",
-          })}
-        </Typography>
-      </section>
+      <BackPageTitleComponent name="Carrinho de compra" />
+      <div className={styles.container_prices}>
+        {matches && <CartTotalComponent />}
+        <ListProductsComponent />
+        {!matches && <CartTotalComponent />}
+      </div>
     </div>
   );
 };
