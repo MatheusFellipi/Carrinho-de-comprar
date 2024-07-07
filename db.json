@@ -1,69 +1,152 @@
-{
-  "products": [
+[
     {
-      "id": 1,
-      "name": "Notebook Gamer",
-      "rating": 2,
-      "description": "Notebook com alto desempenho, ideal para jogos.",
-      "logo_img": "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-      "img": [
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg"
-      ],
-      "price": 4999.99,
-      "divide_price": 499.99
+        "id": 1,
+        "name": "Casaco de Lã Feminino",
+        "rating": 4.8,
+        "description": "Um casaco de lã grosso e aconchegante, perfeito para o estilo dark academia.",
+        "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+        "img": [
+            "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+            "./public/img/1706842145cd61ae1024abc14b2948e1d941b32e38_thumbnail_900x.webp",
+            "./public/img/1706842135435f95f5aa9c325b5c606792077252e3_thumbnail_900x.webp",
+            "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
+        ],
+        "price": 350.00,
+        "divide_price": 35.00
     },
     {
-      "id": 2,
-      "name": "Smartphone XYZ",
-      "rating": 2,
-      "description": "Smartphone com excelente câmera e bateria de longa duração.",
-      "logo_img": "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-      "img": [
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg"
-      ],
-      "price": 1999.99,
-      "divide_price": 199.99
+        "id": 2,
+        "name": "Calça Xadrez",
+        "rating": 4.6,
+        "description": "Calça xadrez em tons escuros, ideal para compor um look acadêmico.",
+        "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+        "img": [
+            "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+            "./public/img/1706842145cd61ae1024abc14b2948e1d941b32e38_thumbnail_900x.webp",
+            "./public/img/1706842135435f95f5aa9c325b5c606792077252e3_thumbnail_900x.webp",
+            "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
+        ],
+        "price": 180.00,
+        "divide_price": 18.00
     },
     {
-      "id": 3,
-      "name": "Fone de Ouvido Bluetooth",
-      "rating": 2,
-      "description": "Fone de ouvido sem fio com cancelamento de ruído.",
-      "logo_img": "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-      "img": [
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg"
-      ],
-      "price": 299.99,
-      "divide_price": 29.99
+        "id": 3,
+        "name": "Camisa Social Branca",
+        "rating": 4.7,
+        "description": "Camisa social branca de algodão, essencial para um visual dark academia clássico.",
+        "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+        "img": [
+            "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+            "./public/img/1706842145cd61ae1024abc14b2948e1d941b32e38_thumbnail_900x.webp",
+            "./public/img/1706842135435f95f5aa9c325b5c606792077252e3_thumbnail_900x.webp",
+            "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
+        ],
+        "price": 120.00,
+        "divide_price": 12.00
     },
     {
-      "id": 4,
-      "name": "Smart TV 4K",
-      "rating": 2,
-      "description": "Smart TV com resolução 4K e acesso a diversos aplicativos.",
-      "logo_img": "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-      "img": [
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg",
-        "https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/71/1071136_notebook-acer-aspire-3-a315510p34xc-windows-11-tela-156-full-hd-8gb-ram-256gb-ssd-10010350_m1_638440520205178061.jpg"
-      ],
-      "price": 2999.99,
-      "divide_price": 299.99
+        "id": 4,
+        "name": "Vestido Midi Feminino",
+        "rating": 4.9,
+        "description": "Vestido midi em cores sóbrias com detalhes vintage, ideal para o estilo dark academia.",
+        "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+        "img": [
+            "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+            "./public/img/1706842145cd61ae1024abc14b2948e1d941b32e38_thumbnail_900x.webp",
+            "./public/img/1706842135435f95f5aa9c325b5c606792077252e3_thumbnail_900x.webp",
+            "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
+        ],
+        "price": 250.00,
+        "divide_price": 25.00
+    },
+    {
+        "id": 5,
+        "name": "Blazer Marrom Feminino",
+        "rating": 4.5,
+        "description": "Blazer marrom de corte clássico, perfeito para completar seu look dark academia.",
+        "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+        "img": [
+            "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+            "./public/img/1706842145cd61ae1024abc14b2948e1d941b32e38_thumbnail_900x.webp",
+            "./public/img/1706842135435f95f5aa9c325b5c606792077252e3_thumbnail_900x.webp",
+            "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
+        ],
+        "price": 300.00,
+        "divide_price": 30.00
+    },
+    {
+        "id": 6,
+        "name": "Saia Plissada",
+        "rating": 4.6,
+        "description": "Saia plissada em cor escura, elegante e sofisticada para o estilo dark academia.",
+        "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+        "img": [
+            "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+            "./public/img/1706842145cd61ae1024abc14b2948e1d941b32e38_thumbnail_900x.webp",
+            "./public/img/1706842135435f95f5aa9c325b5c606792077252e3_thumbnail_900x.webp",
+            "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
+        ],
+        "price": 150.00,
+        "divide_price": 15.00
+    },
+    {
+        "id": 7,
+        "name": "Cardigan de Tricô Feminino",
+        "rating": 4.8,
+        "description": "Cardigan de tricô macio e confortável, ideal para dias mais frios.",
+        "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+        "img": [
+            "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+            "./public/img/1706842145cd61ae1024abc14b2948e1d941b32e38_thumbnail_900x.webp",
+            "./public/img/1706842135435f95f5aa9c325b5c606792077252e3_thumbnail_900x.webp",
+            "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
+        ],
+        "price": 200.00,
+        "divide_price": 20.00
+    },
+    {
+        "id": 8,
+        "name": "Suéter de Lã Feminino",
+        "rating": 4.9,
+        "description": "Suéter de lã com gola alta, perfeito para manter-se aquecido com estilo.",
+        "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+        "img": [
+            "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+            "./public/img/1706842145cd61ae1024abc14b2948e1d941b32e38_thumbnail_900x.webp",
+            "./public/img/1706842135435f95f5aa9c325b5c606792077252e3_thumbnail_900x.webp",
+            "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
+        ],
+        "price": 220.00,
+        "divide_price": 22.00
+    },
+    {
+        "id": 9,
+        "name": "Gravata Borboleta",
+        "rating": 4.3,
+        "description": "Gravata borboleta clássica, um acessório indispensável para o estilo dark academia.",
+        "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+        "img": [
+            "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+            "./public/img/1706842145cd61ae1024abc14b2948e1d941b32e38_thumbnail_900x.webp",
+            "./public/img/1706842135435f95f5aa9c325b5c606792077252e3_thumbnail_900x.webp",
+            "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
+        ],
+        "price": 80.00,
+        "divide_price": 8.00
+    },
+    {
+        "id": 10,
+        "name": "Boina de Lã",
+        "rating": 4.7,
+        "description": "Boina de lã em cor preta, adiciona um toque final sofisticado ao look.",
+        "logo_img": "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+        "img": [
+            "./public/img/1706842142d3e04cd4eaf141868f22c40c0c1432d2_thumbnail_900x.webp",
+            "./public/img/1706842145cd61ae1024abc14b2948e1d941b32e38_thumbnail_900x.webp",
+            "./public/img/1706842135435f95f5aa9c325b5c606792077252e3_thumbnail_900x.webp",
+            "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
+        ],
+        "price": 100.00,
+        "divide_price": 10.00
     }
-  ]
- 
-}
+]
