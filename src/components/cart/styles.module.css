@@ -1,12 +1,5 @@
-.container {
+.total_prices {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container_products {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  max-width: 1000px;
+  gap:10px;
+  justify-content: flex-end;
 }
