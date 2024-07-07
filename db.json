@@ -12,7 +12,9 @@
             "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
         ],
         "price": 350.00,
-        "divide_price": 35.00
+        "divide_price": 35.00,
+        "colors": ["#000", "#964b00"],
+        "brand": "Dark Fashion"
     },
     {
         "id": 2,
@@ -27,7 +29,9 @@
             "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
         ],
         "price": 180.00,
-        "divide_price": 18.00
+        "divide_price": 18.00,
+        "colors": ["#000","#808080"],
+        "brand": "Elegance X"
     },
     {
         "id": 3,
@@ -42,7 +46,9 @@
             "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
         ],
         "price": 120.00,
-        "divide_price": 12.00
+        "divide_price": 12.00,
+        "colors": ["#808080"],
+        "brand": "Classic Styles"
     },
     {
         "id": 4,
@@ -57,7 +63,9 @@
             "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
         ],
         "price": 250.00,
-        "divide_price": 25.00
+        "divide_price": 25.00,
+        "colors": ["#000", "#964b00"],
+        "brand": "Vintage Charm"
     },
     {
         "id": 5,
@@ -72,7 +80,9 @@
             "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
         ],
         "price": 300.00,
-        "divide_price": 30.00
+        "divide_price": 30.00,
+        "colors": ["#964b00"],
+        "brand": "Classic Styles"
     },
     {
         "id": 6,
@@ -87,7 +97,9 @@
             "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
         ],
         "price": 150.00,
-        "divide_price": 15.00
+        "divide_price": 15.00,
+        "colors": ["#000","#808080"],
+        "brand": "Elegance X"
     },
     {
         "id": 7,
@@ -102,7 +114,9 @@
             "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
         ],
         "price": 200.00,
-        "divide_price": 20.00
+        "divide_price": 20.00,
+        "colors": ["#f5f5dc", "#808080"],
+        "brand": "Warm & Cozy"
     },
     {
         "id": 8,
@@ -117,7 +131,9 @@
             "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
         ],
         "price": 220.00,
-        "divide_price": 22.00
+        "divide_price": 22.00,
+        "colors": ["#FF0000", "#964b00"],
+        "brand": "Warm & Cozy"
     },
     {
         "id": 9,
@@ -132,7 +148,9 @@
             "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
         ],
         "price": 80.00,
-        "divide_price": 8.00
+        "divide_price": 8.00,
+        "colors": ["#000"],
+        "brand": "Classic Accessories"
     },
     {
         "id": 10,
@@ -147,6 +165,8 @@
             "./public/img/17068421391747ffd97950f1227dc30d3fb14fdc4f_thumbnail_900x.webp"
         ],
         "price": 100.00,
-        "divide_price": 10.00
+        "divide_price": 10.00,
+        "colors": ["#000"],
+        "brand": "Classic Accessories"
     }
 ]

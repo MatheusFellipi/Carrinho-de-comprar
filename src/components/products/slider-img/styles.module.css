@@ -1,26 +1,26 @@
 .container_img {
   display: flex;
   justify-content: center;
-  align-items: self-start;
   gap: 40px;
 }
 
 .group_img {
   width: 59px;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-  height: 100%;
 }
 
 .img_presentation {
-  width: 18.5rem;
-  height: 21rem;
-  object-fit: scale-down;
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
 }
 
 .img {
   cursor: pointer;
-  width: 3.688rem;
-  height: 3.125rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .hide {
@@ -31,6 +31,13 @@
   .group_img {
     display: none;
   }
+
+  .img_presentation {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+  }
+
   .container_img {
     gap: 0px
   }

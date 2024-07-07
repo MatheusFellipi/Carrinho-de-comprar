@@ -63,7 +63,6 @@ export default function CardProducts({
           })}`}
         </Typography>
       </CardContent>
-
       <CardActions sx={styCardAction} disableSpacing={true}>
         <Button onClick={() => navigate(`/${data.id}`)}>
           <InfoOutlinedIcon />

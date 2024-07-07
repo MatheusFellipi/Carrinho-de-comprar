@@ -1,4 +1,5 @@
 import { ProductType } from "@/types/products";
+import { NavigateFunction } from "react-router-dom";
 import Slider from "react-slick";
 
 export interface IDetailsContext {
@@ -10,4 +11,7 @@ export interface IDetailsContext {
   sliderNavigationRef: React.MutableRefObject<null>;
   product: ProductType | undefined;
   matches: boolean;
+  selectImg:string
+  navigate:NavigateFunction,
+  setSelectImg:React.Dispatch<React.SetStateAction<string>>;
 }
