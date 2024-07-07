@@ -1,10 +1,10 @@
+import { itemCartProductType } from "@/types/products";
+
 export interface ICartContext {
-  cart: ItemProductsProps[];
-  handleAddProduct: (product: ItemProductsProps) => void;
-  handleRemover: (item: ItemProductsProps) => void;
+  cart: itemCartProductType[];
   total: number;
-  totalItem: number
-  handleOpen: () => void
-  handleQtd: (key: string, item: ItemProductsProps) => void
-  open: boolean
+  handleAddProduct: (product: itemCartProductType) => void;
+  handleRemover: (item: itemCartProductType) => void;
+  handleQtdRemove: (id: number) => void;
+  handleQtdAdd: (id: number) => void;
 }

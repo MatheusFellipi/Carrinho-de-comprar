@@ -1,76 +1,88 @@
 import { ICartContext } from "@/shared/hook/cart/model";
+import { itemCartProductType } from "@/types/products";
 import { useEffect, useState } from "react";
-import { toast } from "react-toastify";
 
 export function CartModelView(): ICartContext {
-  const [totalItem, setTotalItem] = useState(0)
-  const [total, setTotal] = useState(0)
-  const [open, setOpen] = useState(true)
+  const [total, setTotal] = useState(0);
 
-  const [cart, setCart] = useState<ItemProductsProps[]>(() => {
+  const [cart, setCart] = useState<itemCartProductType[]>(() => {
     if (typeof window === "undefined") return [];
     const storageCart = window.localStorage.getItem("cart");
     if (storageCart) return JSON.parse(storageCart);
-    return []
+    return [];
   });
 
-  const handleAddProduct = (item: ItemProductsProps): void => {
+  useEffect(() => {
+    calculateTotal(cart);
+  }, []);
+
+  const handleAddProduct = (item: itemCartProductType): void => {
     const copy = [...cart];
-    const productExists = copy.find((i) => i.id === item.id);
-    
-    if (productExists !== undefined && productExists.qtd && productExists.total) {
-      productExists.qtd++
-      productExists.total = productExists.total + parseFloat(productExists.price)
-    }
-    else {
-      item.qtd = 1
-      item.total = parseFloat(item.price)
+    const exist = copy.find((i) => i.id === item.id);
+    if (exist) {
+      exist.qtd++;
+      exist.total_price += exist.price;
+    } else {
+      item.qtd = 1;
+      item.total_price = item.price;
       copy.push(item);
     }
-    setCart(copy)
-    toast("O produto foi adicionado ao carrinho", { type: "info" });
-    setTotalItem(copy.length)
-    calculateTotal(copy)
+    setCart(copy);
+    calculateTotal(copy);
+    addItemLocal(copy);
   };
 
-  const handleQtd = (key: string, item: ItemProductsProps): void => {
-    const copy = [...cart]
-    const index = copy.findIndex(x => x.id === item.id)
+  const handleQtdRemove = (id: number): void => {
+    const copy = [...cart];
+    const index = copy.findIndex((x) => x.id === id);
     if (index === -1) return;
-    const element = copy[index]
-    if (key === "plus" && item.qtd && element.total) {
-      element.total += parseFloat(item.price)
-      item.qtd++
-    }
-    else if (item.qtd && item.qtd !== 0 && element.total) {
-      element.total -= parseFloat(item.price)
-      item.qtd--
-    }
-    copy[index] = item
-    if (item.qtd !== 0 && item.qtd) setCart(copy)
-    else handleRemover(item)
-    calculateTotal(copy)
-  }
+    copy[index].total_price -= copy[index].price;
+    copy[index].qtd--;
+    if (copy[index].qtd === 0) copy.splice(index, 1);
+    setCart(copy);
+    calculateTotal(copy);
+    addItemLocal(copy);
+  };
 
-  const handleRemover = (item: ItemProductsProps) => {
-    const copy = [...cart]
-    const index = copy.findIndex(x => x.id === item.id)
-    if (index !== -1) copy.splice(index, 1)
-    setCart(copy)
-    calculateTotal(copy)
-    setTotalItem(copy.length)
-  }
+  const handleQtdAdd = (id: number): void => {
+    const copy = [...cart];
+    const index = copy.findIndex((x) => x.id === id);
+    if (index === -1) return;
+    copy[index].total_price += copy[index].price;
+    copy[index].qtd++;
+    setCart(copy);
+    calculateTotal(copy);
+    addItemLocal(copy);
+  };
 
-  const calculateTotal = (data: ItemProductsProps[]) => {
-    const total = data.reduce((acc: number, item: any) => {
-      return acc + item.total;
+  const handleRemover = (item: itemCartProductType) => {
+    const copy = [...cart];
+    const index = copy.findIndex((x) => x.id === item.id);
+    if (index !== -1) copy.splice(index, 1);
+    addItemLocal(copy);
+    setCart(copy);
+    calculateTotal(copy);
+  };
+
+  const calculateTotal = (data: itemCartProductType[]) => {
+    const total = data.reduce((acc: number, item: itemCartProductType) => {
+      return acc + item.total_price;
     }, 0);
     setTotal(total);
   };
 
-  const handleOpen = () => {
-    setOpen(!open)
-  }
+  const addItemLocal = (items: itemCartProductType[]) => {
+    window.localStorage.removeItem("cart");
+    window.localStorage.setItem("cart", JSON.stringify(items));
+  };
 
-  return { cart, handleAddProduct, handleOpen, open, total, handleRemover, handleQtd, totalItem }
+
+  return {
+    cart,
+    handleAddProduct,
+    total,
+    handleRemover,
+    handleQtdRemove,
+    handleQtdAdd,
+  };
 }

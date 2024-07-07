@@ -8,16 +8,39 @@ interface CartProviderProps {
 
 export const CartContext = createContext<ICartContext>({} as ICartContext);
 
-export function CartProvider({ children }: Readonly<CartProviderProps>): JSX.Element {
-  const {handleAddProduct, cart, handleRemover, total, totalItem, handleOpen, open, handleQtd} = CartModelView()
+export function CartProvider({
+  children,
+}: Readonly<CartProviderProps>): JSX.Element {
+  const {
+    handleAddProduct,
+    cart,
+    handleRemover,
+    total,
+    handleQtdRemove,
+    handleQtdAdd,
+  } = CartModelView();
 
-  const contextValue = useMemo(() => ({ cart, handleAddProduct, handleRemover, total, handleOpen, open, handleQtd, totalItem
-  }), [cart, handleAddProduct, handleRemover, total, handleOpen, open, handleQtd, totalItem]);
+  const contextValue = useMemo(
+    () => ({
+      cart,
+      handleAddProduct,
+      handleRemover,
+      total,
+      handleQtdRemove,
+      handleQtdAdd,
+    }),
+    [
+      cart,
+      handleAddProduct,
+      handleRemover,
+      total,
+      handleQtdRemove,
+      handleQtdAdd,
+    ]
+  );
 
   return (
-    <CartContext.Provider value={contextValue}>
-      {children}
-    </CartContext.Provider>
+    <CartContext.Provider value={contextValue}>{children}</CartContext.Provider>
   );
 }
 
